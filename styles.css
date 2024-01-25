@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+/* defult value for all page that have this tag */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color:#222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* Home page */
+/* the parent of navbar */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: rgb(4, 76, 46);
+  box-shadow: 0 5px 15px rgba(9, 42, 19, 0.652);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 10vh;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+/* bar on the top of page */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s ease;
+}
+
+/* to make it motion */
+#navbar li a:hover {
+  color: rgb(6, 73, 36);
+  cursor: pointer;
+  
+}
+
+/* it will change the color when you pointing it */
+#navbar li a:hover,
+#navbar li a.active {
+  color:rgb(2, 255, 116);
+}
+
+/*the navbar will follow when you scolling the mouse */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+   content: "";
+   width: 20px;
+   height: 2px;
+   background: rgb(8, 41, 23);
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+
+#mobile {
+  display: none;
+  justify-content: center;
+}
+
+#close {
+  display: none;
+}
+
+#header-page{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/free-vector/group-students-study-together-with-books_107791-11985.jpg);
+  width: 100%;
+  height: 45vh;
+  background-position: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+/* styel opennig section text */
+#header-page h2 {
+  color:white;
+  text-shadow: 2px 2px #fdb347;
+}
+/* styel openning section text */
+#header-page p {
+  color:white;
+  text-shadow:  white;
+}
+/* styel a big text */
+.header-topic {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  background-color: #0a0a23;
+  border-bottom: 4px solid #fdb347;
+}
+/* style a big text */
+.header-topic h2 {
+  color:rgb(2, 255, 116);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* style a content that user can click */
+.topic {
+  padding: 55px 25px 25px;
+  float: left;
+  width: 24.99999%;
+  height: 65vh;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* style a border of the content */
+div .row {
+  height: 55vh;
+  width: auto;
+  border: 1px solid #123;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+div .row:hover {
+  box-shadow: 1px 1px 5px 5px #0a0a23;
+  border-radius: 50px;
+}
+
+.row h4 {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+/* style a border of the image */
+div .row img {
+  width: 100%;
+  height: 25vh;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 50px;
+}
+/* style a description of all content */
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* style a button in the content */
+div .desc button {
+  background-color: white; 
+  color: black; 
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  size: 25px;
+  text-decoration: none;
+}
+/* remove a line on text in the button */
+div .desc button a {
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+}
+/* change a color's text from black to white */
+div .desc button a:hover {
+  color: white;
+}
+
+/* chang a color of button */
+div .desc button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+button{
+  width: 180px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 12px 0;
+  background: #0a0a23;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  font-size: 15px;
+  font: bolder; 
+}
